@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container1"></div>
+    <div class="container2"></div>
+    <h1>hello</h1>
+    <p>world i am here</p>
+    <button>Click me</button>
+
+    <button id = "hide"> clik  me to hide</button>
+    <button id = "show"> clik  me to show</button>
+
+    <button id = "toggle"> clik  me to toggle</button>
+    
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+    //   $('div.container1').hide(5000);
+    //   $('div.container2').hide(5000);
+    //   $('h1').hide(5000);
+    //     $('p').hide(5000, function() {
+    //         alert('All elements have been hidden');
+    //     });
+
+    //     $('div.container1').show(5000);
+    //     $('div.container2').show(5000);
+    //     $('h1').show(5000);
+    //     $('p').show(5000, function() { 
+    //         alert('All elements have been shown');
+    //     });
+
+
+    // Toggle visibility of elements with a button click
+    // Hides and shows elements with a toggle effect
+
+    // $(document).ready(function() {
+    //    $("button").click(function() {
+    //         $('div.container1').toggle(5000);
+    //         $('div.container2').toggle(5000);
+    //         $('h1').toggle(5000);
+    //         $('p').toggle(5000, function() {
+    //             alert('All elements have been toggled');
+    //         });
+    //     });
+    // });
+
+
+
+    // Example of using fadeIn and fadeOut
+    // $(document).ready(function() {
+    //     $('button').click(function() {   
+    //         $('div.container1').fadeOut(5000);    
+    //         $('div.container2').fadeOut(5000);
+    //         $('h1').fadeOut(5000);
+    //         $('p').fadeOut(5000, function() {
+    //             alert('All elements have been faded out');
+    //         });
+    //     });
+    // });
+    // Example of using fadeIn
+    $(document).ready(function() {
+        $('button').click(function() {
+            $('div.container1').fadeIn(5000);
+            $('div.container2').fadeIn(5000);
+            $('h1').fadeIn(5000);
+            $('p').fadeIn(5000, function() {
+              
+            });
+        });
+    });
+
+    //for hiding elements with a button click
+    $(document).ready(function() {
+        $('#hide').click(function() {
+            $('div.container1').hide(5000);
+            $('div.container2').hide(5000);
+            $('h1').hide(5000);
+            $('p').hide(5000, function() {
+                // alert('All elements have been hidden');
+            });
+        });
+
+        //for showing elements with a button click
+        $('#show').click(function() {
+            $('div.container1').show(5000);
+            $('div.container2').show(5000);
+            $('h1').show(5000);
+            $('p').show(5000, function() {
+                // alert('All elements have been shown');
+            });
+        });
+
+        //for toggling elements with a button click
+        $('#toggle').click(function() {
+            $('div.container1').toggle(5000);
+            $('div.container2').toggle(5000);
+            $('h1').toggle(5000);
+            $('p').toggle(5000, function() {
+                // alert('All elements have been toggled');
+            });
+        });
+    });
+
+
+    </script>
+
+
+
+
+</body>
+</html>
