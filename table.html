@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- table -->
+     <table>
+
+        <tr>
+            <th>Column 1</th>
+            <th>Column 2</th>
+        </tr>
+        <tr>
+            <td>Data 1</td>
+            <td>Data 2</td>
+        </tr>
+        <tr>
+            <td>Data 3</td>
+            <td>Data 4</td>
+        </tr>
+     </table>
+    
+        <ul>
+            <li> step 1</li>
+            <li> step 2</li>
+            <li> step 3</li>
+            <li> step 4</li>
+
+        </ul>
+    </form>
+    <button id="hide"> clik  me to hide</button>
+    <button id="show"> click me to show</button>
+    <button id="toggle"> click me to toggle</button>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#hide').click(function(){
+                $('table').hide(5000);
+                $('ul').hide(5000);
+            });
+            $('#show').click(function(){
+                $('table').show(5000);
+                $('ul').show(5000);
+            });
+            $('#toggle').click(function(){
+                $('table').toggle(5000);
+                $('ul').toggle(5000);
+            });
+        });
+    </script>
+</body>
+</html>
