@@ -8,4 +8,19 @@
     width: 100%px;
     height: 200px;
     background-color: green;
-}
+};
+.table {
+    width: 100%;
+    height: 200px;
+    background-color: blue;
+};
+.table td {
+    width: 100%;
+    height: 200px;
+    background-color: yellow;
+};
+.table tr {
+    width: 100%;
+    height: 200px;
+    background-color: purple;
+};
